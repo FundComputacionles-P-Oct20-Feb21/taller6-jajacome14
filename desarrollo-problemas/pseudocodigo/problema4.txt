@@ -1,0 +1,22 @@
+1. Inicio
+2. nombreEstudiante, x(200)[{1-9},{a-z},{A-Z}, {/}]
+3. contador, i[0,n] <-- 1
+4. promedioCiclo, d[0,n] 
+5. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}]
+6. notaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}] 
+7. Mientras contador <= 4 entonces
+8.	Escribir "Ingrese su nombre"
+9.	Leer nombreEstudiante
+10.	Escribir "Ingrese su promedio del ciclo"
+11.	Leer promedioCiclo
+12.  	Si promedioCiclo >= 7 Entonces
+13.  		notaFinal <-- "Aprobado" 
+14. 		cadenaFinal <-- nombreEstudiante + "\t" + promedioCiclo + "\t" + notaFinal + "\n"
+15. 	De lo contrario 
+16. 		notaFinal <-- "Reprobado"
+17. 		cadenaFinal <-- nombreEstudiante + "\t" + promedioCiclo + "\t" + notaFinal + "\n"
+18. 	Fin Si 
+19. contador <-- contador + 1
+20. Fin Mientras 
+21.	Escribir cadenaFinal
+22. Fin

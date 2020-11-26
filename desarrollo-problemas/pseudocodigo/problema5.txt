@@ -1,0 +1,33 @@
+1. Inicio
+2. nombreCliente, x(20)[{a-z},{BS}, {A-Z}]
+3. costoComputadora, d[0,n]
+4. tipoCliente, i[0,n]
+5. costoFinal, d[0,n]
+6. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/},{BS}]
+7. contador, i[0,n] <-- 1
+8. descuento, d[0,n]
+8. Mientras contador <= 7 entonces
+9.	Escribir "Ingrese su nombre"
+10.	Leer nombreCliente
+11.	Escribir "Ingrese el costo de la computadora"
+12.	Leer costoComputadora
+13.	Escribir "Que tipo de cliente es?(1,2,3..)"
+14.	Leer tipoCliente
+15.	Si tipoCliente == 1 Entonces
+16.		descuento <-- costoComputadora*10/100
+17.		costoFinal <-- costoComputadora-descuento
+18.		cadenaFinal <-- cadenaFinal +nombreCliente +" tipo " + tipoCliente +", compra computadora con precio $" +costoComputadora +" y el costo final a cancelar es: $"+costoFinal + "\n"
+19.	De lo contrario
+20.		Si tipoCliente == 2 Entonces
+21. 			descuento <-- costoComputadora*20/100
+22.			costoFinal <-- costoComputadora-descuento
+23.			cadenaFinal <-- cadenaFinal +nombreCliente +" tipo " + tipoCliente +", compra computadora con precio $" +costoComputadora +" y el costo final a cancelar es: $"+costoFinal + "\n"
+24.		De lo contrario
+25.			costoFinal <--costoComputadora 
+26.			cadenaFinal <-- cadenaFinal +nombreCliente +" tipo " + tipoCliente +", compra computadora con precio $" +costoComputadora +" y el costo final a cancelar es: $"+costoFinal + "\n"
+27.		Fin si
+28.	Fin si
+29. contador <-- contador + 1
+30. Fin Mientras 
+31. Escribir cadenaFinal
+32. Fin
